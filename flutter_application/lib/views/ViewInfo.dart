@@ -142,7 +142,7 @@ class ViewInfoState extends State<ViewInfo> with TickerProviderStateMixin {
                               maxLines: 2, style: TextStyle(fontSize: 18))),
                       InkWell(
                         onTap: () {
-                          _launchInBrowser("https://github.com/mikyll/SNQuiz");
+                          _launchInBrowser("https://github.com/FabioC-alt/SNQuiz");
                         },
                         child: const Text("mikyll/SNQuiz",
                             textAlign: TextAlign.center,
@@ -184,7 +184,7 @@ class ViewInfoState extends State<ViewInfo> with TickerProviderStateMixin {
                             InkWell(
                               onTap: () {
                                 _launchInBrowser(
-                                    "https://github.com/mikyll/SNQuiz/issues/new/choose");
+                                    "https://github.com/FabioC-alt/SNQuiz/issues/new/choose");
                               },
                               child: const Text("Apri una issue",
                                   style: TextStyle(

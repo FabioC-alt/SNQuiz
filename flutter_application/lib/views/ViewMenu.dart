@@ -294,7 +294,7 @@ class ViewMenuState extends State<ViewMenu> {
                       : const SizedBox(height: 50),
                   InkWell(
                     onTap: () {
-                      _launchInBrowser("https://github.com/mikyll/SNQuiz");
+                      _launchInBrowser("https://github.com/FabioC-alt/SNQuiz");
                     },
                     child: Container(
                       color: Colors.indigo.withOpacity(0.35),
