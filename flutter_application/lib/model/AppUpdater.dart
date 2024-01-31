@@ -11,7 +11,7 @@ class AppUpdater {
     String newVersionDownloadURL = "";
 
     http.Response response = await http.get(Uri.parse(
-        'https://api.github.com/repos/mikyll/ROQuiz/releases/latest'));
+        'https://api.github.com/repos/FabioC-alt/SNQuiz/releases/latest'));
         
 
     try {
