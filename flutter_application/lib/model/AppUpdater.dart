@@ -28,6 +28,7 @@ class AppUpdater {
           newVersionPresent = true;
           break;
         }
+
       }
 
       if (newVersionPresent) {

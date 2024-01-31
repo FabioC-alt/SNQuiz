@@ -58,7 +58,7 @@ class ViewInfoState extends State<ViewInfo> with TickerProviderStateMixin {
 
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        _launchInBrowser("https://github.com/mikyll/SNQuiz");
+        _launchInBrowser("https://github.com/FabioC-alt/SNQuiz");
       }
     });
   }
