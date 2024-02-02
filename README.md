@@ -49,7 +49,7 @@ Per l'implementazione ho utilizzato dell'app mobile ho utilizzato Flutter e come
 versione Flutter: 3.16.5 (stable)<br/>
 versione SDK Dart: 3.2.3 (stable)
 
-
+[domande-url]: https://github.com/mikyll/ROQuiz/blob/main/Domande.txt
 [downloads-shield]: https://img.shields.io/github/downloads/FabioC-alt/SNQuiz/total
 [downloads-url]: https://github.com/FabioC-alt/SNQuiz/releases/latest
 [contributors-shield]: https://img.shields.io/github/contributors/FabioC-alt/SNQuiz
