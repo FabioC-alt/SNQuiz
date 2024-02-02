@@ -10,9 +10,10 @@ profondamente per la pazienza e la disponibilità.
 1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.5/SNQuiz-mobile.apk).
 2. Selezionare ```INSTALLA``` e ```INSTALLA COMUNQUE```.
 
-### Roadmap
-Features da aggiungere e sviluppi futuri:
-- [ ]
+### Teoria
+Quest'app non è da considerarsi sostitutiva allo studio del materiale, bensì di aiuto
+per il superamento dell'esame.
+La teoria è disponibile [qui](https://github.com/Lombax99/SpaceNetwork/tree/main/Teoria).
 
 ### Compilazione APK
 - default: ```flutter build apk --split-per-abi```
