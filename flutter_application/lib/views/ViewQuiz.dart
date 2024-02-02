@@ -31,6 +31,7 @@ class _ViewQuizState extends State<ViewQuiz> {
   bool _isOver = false;
   int _qIndex = 0;
   int _correctAnswers = 0;
+  String _finalmessage = "";
 
   String _currentQuestion = "";
   List<String> _currentAnswers = [];
@@ -80,6 +81,9 @@ class _ViewQuizState extends State<ViewQuiz> {
         _correctAnswers++;
       }
     }
+    if (_correctAnswers>7) _finalmessage="Passato!";
+    else if (_correctAnswers==7) _finalmessage="Mild Pass";
+    else _finalmessage="Bocciato!";
   }
 
   void _startTimer() {
@@ -316,7 +320,7 @@ class _ViewQuizState extends State<ViewQuiz> {
                               child: Text(
                                 "Risposte corrette: $_correctAnswers/${widget.settings.questionNumber}\n"
                                 "Risposte errate: ${widget.settings.questionNumber - _correctAnswers}/${widget.settings.questionNumber}\n"
-                                "Range di voto finale, in base allo scritto: [${(11.33 + _correctAnswers ~/ 3).toInt().toString()}, ${22 + _correctAnswers * 2 ~/ 3}]",
+                                "Esito del test: ${_finalmessage}",
                                 maxLines: 4,
                               ),
                             ),
