@@ -3,7 +3,8 @@
 Applicazione mobile di SNQuiz, per esercitarsi con i quiz del corso Space Network M. 
 
 ### Applicazione
-Questa applicazione è stata sviluppata a partire da quella di @mikyll che ringrazio profondamente per la pazienza e la disponibilità. 
+Questa applicazione è stata sviluppata a partire da quella di @mikyll che ringrazio
+profondamente per la pazienza e la disponibilità. 
 
 ### Esecuzione
 1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.5/SNQuiz-mobile.apk).
