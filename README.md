@@ -8,7 +8,7 @@
   [![dart][dart-shield]][dart-url]
   [![flutter][flutter-shield]][flutter-url]
   
-  <h1> ROQuiz</h1>
+  <h1> SNQuiz</h1>
   <h3> Applicazione multipiattaforma per esercitarsi con i quiz del corso <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2023/468023">Space Network M</a>.</h3>
   
   L'app permette di <b>simulare dei quiz d'esame</b>: vengono pescate, in modo casuale, delle domande a risposta multipla a cui l'utente deve rispondere entro un tempo limite, definito da un timer.<br/>
