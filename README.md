@@ -2,11 +2,7 @@
 
   [![Downloads][downloads-shield]][downloads-url]
   [![Domande][domande-shield]][domande-url]
-  [![Validazione Domande][validazione-shield]][validazione-url]
-  [![Stargazers][stars-shield]][stars-url]
-  [![Contributors][contributors-shield]][contributors-url]
   [![MIT License][license-shield]][license-url]
-  [![Issues][issues-shield]][issues-url]
   <br />
   [![java][java-shield]][java-url]
   [![dart][dart-shield]][dart-url]
