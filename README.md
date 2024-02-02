@@ -1,7 +1,7 @@
 <div align="center">
 
   [![Downloads][downloads-shield]][downloads-url]
-  [![Domande][domande-shield]][domande-url]
+  [![Domande][domande-shield]]
   [![MIT License][license-shield]][license-url]
   <br />
   [![java][java-shield]][java-url]
