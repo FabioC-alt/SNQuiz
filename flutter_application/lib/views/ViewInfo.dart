@@ -144,7 +144,7 @@ class ViewInfoState extends State<ViewInfo> with TickerProviderStateMixin {
                         onTap: () {
                           _launchInBrowser("https://github.com/FabioC-alt/SNQuiz");
                         },
-                        child: const Text("mikyll/SNQuiz",
+                        child: const Text("FabioC-alt/SNQuiz",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 fontSize: 18,

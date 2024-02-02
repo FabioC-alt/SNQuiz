@@ -1,4 +1,26 @@
-@Argomento 1 =============================================================================
+@Instruction to the Bundle Protocol =============================================================================
+In a TCP/IP architecture, is TCP end-to-end?
+A. Never.
+B. Only if source and destination belong to two different networks.
+C. Only if source and destination belong to the same local network
+D. Yes, always.
+D
+
+In a DTN architecture, is TCP end-to-end?
+A. Only if TCP source and the destination belong to two different DTN hops
+B. Never
+C. Only if TCP source and destination belong to the same DTN hop
+D. Yes, always
+B
+
+Is the Bundle Protocol end-to-end?
+A. Only if BP source and the destination belong to two different DTN hops
+B. No.
+C. Only if TCP sourceand destination belong to the same DTN hop
+D. Yes, always.
+B
+
+@RFC4838 =============================================================================
 Which EID is correct?
 A. ipn://3.1
 B. ipn:3.1
@@ -6,26 +28,12 @@ C. dtn:/vm2.dtn/ping
 D. dtn:vm2.dtn
 B
 
-If we want to have an opportunistic link from vm1 to vm3
-A. We need to add an alwayson link instruction in the dtn configuration file of vm1
-B. We need to add an alwayson link instruction in the dtn configuration file of both vm1 and vm3
-C. We need to add an alwayson link instruction in the dtn configuration file of either vm1 or vm3
-D. We need to add an alwayson link instruction in the dtn configuration file of vm3
-D
-
 Which EID is correct?
 A. dtn:vm2.dtn
 B. IPN:2.1
 C. dtn://vm2.dtn/ping
 D. ipn://3.1
 C
-
-How many extension blocks can a bundle have? 
-A. 3
-B. 2
-C. 1
-D. there are no limits
-D
 
 Which EID is correct?
 A. ipn://2.703
@@ -48,6 +56,7 @@ C. ipn:0.2
 D. dtn:4.2
 B
 
+
 Which of the following DTN EIDs is wrong?
 A. ipn:3.3
 B. dtn://vm1.dtn/ping
@@ -68,6 +77,7 @@ B. To identify a specific data flow
 C. To identify the application to which the bundle must be delivered
 D. To distinguish between bundles destined to the same EID
 C
+
 
 Which of the following priority classes is wrong?
 A. expedited
@@ -90,55 +100,12 @@ C. forwarded
 D. delivered
 A
 
-@Argomento 2 =============================================================================
-How many addresses has a bundle (max, BPv6)?
-A. 2
-B. 5
-C. 3
-D. 4
-D
-
-How many addresses has a bundle (max, BPv7)?
-A. 3
-B. 5
-C. 4
-D. 2
-A
-
 Bundle fragments must be reassembled before delivery. What happens if a fragment does not arrive?
 A. Other fragments are kept in the BP database until their lifetime expires
 B. After one RTO the missing fragment is autonomously resent by the source
 C. After one RTO the destination asks the previous node to resend the missing fragment
 D. Other fragments are kept in the BP database until a reassembling timer expires
 A
-
-Which is the bundle protocol version specified in RFC5050?
-A. BPv5
-B. BPv4
-C. BPv7
-D. BPv6
-D
-
-How many bundle blocks are compulsory?
-A. 1
-B. 4
-C. 2
-D. 3
-C
-
-Is the bundle primary block compulsory?
-A. Yes
-B. Only for data bundles
-C. No
-D. Only for administrative bundles
-A
-
-Is the bundle payload block compulsory?
-A. Only for data bundles
-B. No
-C. Only if data cannot entirely fit in the primary block
-D. Yes
-D
 
 Can a bundle be fragmented?
 A. Yes, if longer than a threshold specified in the primary block
@@ -168,13 +135,13 @@ C. The source only
 D. All nodes
 B
 
-@Argomento 3 =============================================================================
 Which entities can generate, if requested, a delivered status report?
 A. The source only
 B. All nodes except the source
 C. All nodes
 D. The destination only
 D
+
 
 Which entities can generate, if requested, a status report?
 A. All nodes but the destination
@@ -204,48 +171,12 @@ C. in the "ECOS" extension block
 D. in the payload block
 D
 
-Which of the following contacts is deterministic?
-A. discovered
-B. opportunistic
-C. predicted
-D. scheduled
+A bundle fragment is identified by
+A. The following 2 fields: Source EID, sequence number
+B. The following 3 fields: Source EID, lifetime, sequence number
+C. The following 3 fields: Source EID, Creatrion timestamp, sequence number
+D. The following 5 fields: Source EID, Creatrion timestamp, sequence number, fragmenmt offset, fragemnt lenght
 D
-
-In a TCP/IP architecture, is TCP end-to-end?
-A. Never.
-B. Only if source and destination belong to two different networks.
-C. Only if source and destination belong to the same local network
-D. Yes, always.
-D
-
-In a DTN architecture, is TCP end-to-end?
-A. Only if TCP source and the destination belong to two different DTN hops
-B. Never
-C. Only if TCP source and destination belong to the same DTN hop
-D. Yes, always
-B
-
-Is the Bundle Protocol end-to-end?
-A. Only if BP source and the destination belong to two different DTN hops
-B. No.
-C. Only if TCP sourceand destination belong to the same DTN hop
-D. Yes, always.
-B
-
-In a DTN node the Bundle Protocol is above
-A. UDP
-B. a convergence layer
-C. LTP
-D. TCP
-B
-
-@Argomento 4 =============================================================================
-In a DTN node, a DTN application is on top of
-A. either the Bundle Protocol or LTP
-B. TCP
-C. the Bundle Protocol
-D. LTP
-C
 
 An unfragmented bundle is identified by
 A. The following 5 fields: Source EID, Creation timestamp, sequence number, fragment offset,fragment lenght
@@ -254,11 +185,55 @@ C. The following 3 fields: Source EID, lifetime, sequence number
 D. The following 3 fields: Source EID, Creation timestamp, sequence number
 D
 
-A bundle fragment is identified by
-A. The following 2 fields: Source EID, sequence number
-B. The following 3 fields: Source EID, lifetime, sequence number
-C. The following 3 fields: Source EID, Creatrion timestamp, sequence number
-D. The following 5 fields: Source EID, Creatrion timestamp, sequence number, fragmenmt offset, fragemnt lenght
+In a DTN node, a DTN application is on top of
+A. either the Bundle Protocol or LTP
+B. TCP
+C. the Bundle Protocol
+D. LTP
+C
+
+@RFC5050 and BPbis draft=============================================================================
+Which is the bundle protocol version specified in RFC5050?
+A. BPv5
+B. BPv4
+C. BPv7
+D. BPv6
+D
+
+How many bundle blocks are compulsory?
+A. 1
+B. 4
+C. 2
+D. 3
+C
+
+Is the bundle primary block compulsory?
+A. Yes
+B. Only for data bundles
+C. No
+D. Only for administrative bundles
+A
+
+
+Is the bundle payload block compulsory?
+A. Only for data bundles
+B. No
+C. Only if data cannot entirely fit in the primary block
+D. Yes
+D
+
+Which is the bundle protocol version specified in BPbis1 draft?
+A. BPv7
+B. BPv5
+C. BPv4
+D. BPv6
+A
+
+How many extension blocks can a bundle have? 
+A. 3
+B. 2
+C. 1
+D. there are no limits
 D
 
 In BPbis1 security blocks are applied to
@@ -268,12 +243,26 @@ C. the full bundle
 D. the payload block only
 A
 
-Which is the bundle protocol version specified in BPbis^1 draft?
-A. BPv7
-B. BPv5
-C. BPv4
-D. BPv6
+How many addresses has a bundle (max, BPv6)?
+A. 2
+B. 5
+C. 3
+D. 4
+D
+
+How many addresses has a bundle (max, BPv7)?
+A. 3
+B. 5
+C. 4
+D. 2
 A
+
+In a DTN node the Bundle Protocol is above
+A. UDP
+B. a convergence layer
+C. LTP
+D. TCP
+B
 
 The bundle "lifetime" field indicates
 A. the number of remaining DTN hops after which the bundle will be deleted
@@ -289,6 +278,21 @@ C. represents the number of seconds elapsed since 1 January 1970
 D. represents the number of seconds elapsed since 1 January 2000
 D
 
+What is the maximum number that can be represented by a 3-byte SDNV field?
+A. 2^21
+B. 2^24
+C. 2^16
+D. 2^14
+A
+
+@Satellite Networks =============================================================================
+A “data-mule” transfer makes communication possible in the presence of:
+A. losses
+B. network partitioning
+C. bandwidth asymmetry
+D. long propagation delays
+B
+
 In an integrated TCP-splitting PEP architecture, from the server to the user:
 A. We have one TCP connection and one DTN hop
 B. We have three TCP connections
@@ -303,13 +307,13 @@ C. We have three TCP connections
 D. We have two TCP connections and one DTN hop
 C
 
-
 The DTN equivalent of a distributed TCP-splitting PEP architecture consists of:
 A. One DTN hop
 B. Three DTN hops
 C. Two DTN hops
 D. Two TCP connections and one DTN hop
 B
+
 
 What is the most important DTN architecture feature/element to counteract long propagation delay in GEO satellite networks:
 A. The possibility of using LTP end-to-end
@@ -325,20 +329,12 @@ C. Losses
 D. Link intermittency
 A
 
-@Argomento 5 =============================================================================
 What is the most important challenge in a LEO satellite network?
 A. Long propagation delay
 B. Link intermittency
 C. Asymmetry of bandwidth
 D. Losses
 B
-
-What are the two most important challenges in an interplanetary network?
-A. Long propagation delay and losses
-B. Losses and link intermittency
-C. Asymmetry of bandwidth and link intermittency
-D. Link intermittency and long propagation delay
-D
 
 Data from underwater sensors must be collected by a buoy, passed to a LEO satellite and the downloaded to a control center. What is the best solution?
 A. to use a distributed PEP on the buoy and on the control centre
@@ -347,19 +343,27 @@ C. to use TCP from the sensors to the control centre
 D. to install DTN protocols on all nodes
 D
 
-A “data-mule” transfer makes communication possible in the presence of:
-A. losses
-B. network partitioning
-C. bandwidth asymmetry
-D. long propagation delays
-B
-
 In a "data-mule" transfer the "mule"
 A. is a static DTN node that acts as a relay between two DTN nodes
 B. is a DTN node that acts as a relay between two non-DTN nodes
 C. is a DTN node that moves from one network to another
 D. is not a DTN node although is used to connect two DTN nodes
 C
+
+What is the most important DTN feature/element to counteract long propagation delay in interplanetary networks:
+A. The possibility of using LTP end-to-end
+B. PEPs
+C. The possibility of using LTP hop-by-hop
+D. TCP Hybla
+C
+
+@Interplanetary Networks =============================================================================
+Which of the following contacts is deterministic?
+A. discovered
+B. opportunistic
+C. predicted
+D. scheduled
+D
 
 In a Mars to Earth link, what is the maximum one-way propagation delay?
 A. about 2.5s
@@ -375,12 +379,12 @@ C. about 23min
 D. about 3 min
 D
 
-What is the most important DTN feature/element to counteract long propagation delay in interplanetary networks:
-A. The possibility of using LTP end-to-end
-B. PEPs
-C. The possibility of using LTP hop-by-hop
-D. TCP Hybla
-C
+What are the two most important challenges in an interplanetary network?
+A. Long propagation delay and losses
+B. Losses and link intermittency
+C. Asymmetry of bandwidth and link intermittency
+D. Link intermittency and long propagation delay
+D
 
 Which routing algorithm will be used in interplanetary networks?
 A. Spray & Wait
@@ -396,7 +400,6 @@ C. An LTP data unit encapsulating a single bundle block
 D. A fragment of a file transmitted by LTP
 A
 
-@Argomento 6 =============================================================================
 What is an LTP block?
 A. A set of data that are transmitted during one or multiple subsequent LTP sessions
 B. A set of data that are transmitted independently of other data during one LTP session.
@@ -467,7 +470,6 @@ C. A report segment is sent to the LTP source, only if the data segment is flagg
 D. A report segment is never sent to the source
 D
 
-@Argomento 7 =============================================================================
 When a red data segment of an LTP block arrives
 A. A report segment is always sent to the LTP source, to confirm it.
 B. A report segment is sent to the LTP source, only if the data segment is flagged as a check point
@@ -538,7 +540,6 @@ C. the expected propagation delay between nodes A and B, valid from t1 to t2
 D. the distance between nodes A and B in nautical miles, valid from t1 to t2
 C
 
-@Argomento 8 =============================================================================
 A CGR scheduled "contact" is
 A. an opportunity of transmission from node A to B, starting at time t1 and ending at time t2
 B. an opportunity of transmission from node A to B, starting at time t1 and ending at time t2, with a given Tx nominal speed
@@ -552,6 +553,21 @@ B. varies in time (dynamic)
 C. varies every "range" seconds
 D. is the same for all bundles with the same priority
 B
+@Security & Qos =============================================================================
+Non ci sono domande per questo capitolo, se ne capitano contattare 
+A. Carlo Caini
+B. FabioC-alt
+C. Enrico Denti
+D. Rick Asteley
+D
+
+@Virtual Bricks Lab =============================================================================
+If we want to have an opportunistic link from vm1 to vm3
+A. We need to add an alwayson link instruction in the dtn configuration file of vm1
+B. We need to add an alwayson link instruction in the dtn configuration file of both vm1 and vm3
+C. We need to add an alwayson link instruction in the dtn configuration file of either vm1 or vm3
+D. We need to add an alwayson link instruction in the dtn configuration file of vm3
+D
 
 Which of the following commands is correct?
 A. dtnperf -- client -d dtn://vm3.dtn -T10s -P50k -W2 -L 100s
@@ -581,12 +597,12 @@ C. dtnperf -- client -d dtn://vm3.dtn/server -D200k -P50k -R2b -l100s
 D. dtnperf -- client -d dtn://vm3.dtn -D200k -P50k -W2 -l100s
 D
 
-If we want to have the possibility of sending bundles from vm1 to vm4, via vm2, in the dtn configuration file of vm1 we need to have
-A. one link to vm4 and a route instruction to vm4
-B. one link to vm2 and a route instruction to vm2
-C. one link to vm2 and a route instruction to vm4
-D. one link to vm4 and a route instruction to vm2
-C
+If we want to have an "alwayson" link from vm1 to vm3
+A. We need to add a link instruction in the dtn configuration file of both vm1 and vm3
+B. We need to add a link instruction in the dtn configuration file of vm1
+C. We need to add a link instruction in the dtn configuration file of either vm1 or vm3
+D. We need to add a link instruction in the dtn configuration file of vm3
+B
 
 If we want to have the possibility of forwarding bundles from vm1 to vm3
 A. We need to have a link and a route instruction in the dtn configuration file of vm1
@@ -595,29 +611,14 @@ C. We need to have a link instruction in the dtn configuration file of vm1
 D. We need to have a route instruction in the dtn configuration file of either vm1 or vm3
 A
 
-If we want to have an "alwayson" link from vm1 to vm3
-A. We need to add a link instruction in the dtn configuration file of both vm1 and vm3
-B. We need to add a link instruction in the dtn configuration file of vm1
-C. We need to add a link instruction in the dtn configuration file of either vm1 or vm3
-D. We need to add a link instruction in the dtn configuration file of vm3
-B
+If we want to have the possibility of sending bundles from vm1 to vm4, via vm2, in the dtn configuration file of vm1 we need to have
+A. one link to vm4 and a route instruction to vm4
+B. one link to vm2 and a route instruction to vm2
+C. one link to vm2 and a route instruction to vm4
+D. one link to vm4 and a route instruction to vm2
+C
 
-Which is the syntax to inspect the content of a bundle (e.g. bundle 5), from he DTN2/DTNME daemon shell.
-A. bundle dump 5
-B. bundle list 5
-C. bundle show 5
-D. bundle 5
-A
-
-@ARGOMENTO 9 =============================================================================
-Which is the syntax to see the bundles stored in the local database (from the DTN2/DTNME daemon shell)
-A. bundle show
-B. bundle dumping
-C. bundle
-D. bundle list
-D
-
-What is the right syntax to check the links (from the DTN2/DTNME) daemon shell)
+What is the right syntax to check the links (from the DTN2/DTNME) daemon shell
 A. link check
 B. link list
 C. link dump
@@ -638,19 +639,6 @@ C. dtnme –d -o ./dtn.log -t
 D. dtnmed –d ./dtn.log -t
 C
 
-Which is the syntax to start the dtnperf monitor on vm3
-A. dtnperf – monitor - - vm3
-B. dtnperf - - dtn://vm3.dtn/monitor
-C. dtnperf - - monitor
-D. dtnperf - - monitor - - dtn://vm3.dtn
-C
-
-What is the right syntax to enter the DTN2/DTNME daemon?
-A. telnet localhost 5050
-B. telnet vm1 5050
-C. telnet localhost 4838
-D. dtnd –d -o./dtn.log -t
-A
 
 Which is the syntax to start the dtnperf server on vm4
 A. dtnperf -- server
@@ -673,9 +661,30 @@ C. route add 137.222.24.12 ALWAYSON tcp
 D. route add linkname 137.222.24.12 ALWAYSON tcp
 B
 
-What is the maximum number that can be represented by a 3-byte SDNV field?
-A. 2^21
-B. 2^24
-C. 2^16
-D. 2^14
+What is the right syntax to enter the DTN2/DTNME daemon?
+A. telnet localhost 5050
+B. telnet vm1 5050
+C. telnet localhost 4838
+D. dtnd –d -o./dtn.log -t
+A
+
+Which is the syntax to start the dtnperf monitor on vm3
+A. dtnperf – monitor - - vm3
+B. dtnperf - - dtn://vm3.dtn/monitor
+C. dtnperf - - monitor
+D. dtnperf - - monitor - - dtn://vm3.dtn
+C
+
+Which is the syntax to see the bundles stored in the local database (from the DTN2/DTNME daemon shell)
+A. bundle show
+B. bundle dumping
+C. bundle
+D. bundle list
+D
+
+Which is the syntax to inspect the content of a bundle (e.g. bundle 5), from he DTN2/DTNME daemon shell.
+A. bundle dump 5
+B. bundle list 5
+C. bundle show 5
+D. bundle 5
 A
