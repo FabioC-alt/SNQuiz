@@ -58,10 +58,6 @@ versione SDK Dart: 3.2.3 (stable)
 [downloads-url]: https://github.com/FabioC-alt/SNQuiz/releases/latest
 [contributors-shield]: https://img.shields.io/github/contributors/FabioC-alt/SNQuiz
 [domande-shield]: https://img.shields.io/static/v1?label=domande&message=96&color=green
-[domande-url]: https://github.com/mikyll/ROQuiz/blob/main/Domande.txt
-[stars-url]: https://github.com/mikyll/ROQuiz/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mikyll/ROQuiz
-[issues-url]: https://github.com/mikyll/ROQuiz/issues
 [license-shield]: https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg
 [license-url]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [java-shield]: https://custom-icon-badges.herokuapp.com/badge/Java-ED8B00?logo=java&logoColor=white
