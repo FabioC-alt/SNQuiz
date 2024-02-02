@@ -1,3 +1,30 @@
+<div align="center">
+
+  [![Downloads][downloads-shield]][downloads-url]
+  [![Domande][domande-shield]][domande-url]
+  [![Validazione Domande][validazione-shield]][validazione-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Contributors][contributors-shield]][contributors-url]
+  [![MIT License][license-shield]][license-url]
+  [![Issues][issues-shield]][issues-url]
+  <br />
+  [![java][java-shield]][java-url]
+  [![dart][dart-shield]][dart-url]
+  [![flutter][flutter-shield]][flutter-url]
+  
+  <h1> ROQuiz</h1>
+  <h3> Applicazione multipiattaforma per esercitarsi con i quiz del corso <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2023/468023">Space Network M</a>.</h3>
+  
+  L'app permette di <b>simulare dei quiz d'esame</b>: vengono pescate, in modo casuale, delle domande a risposta multipla a cui l'utente deve rispondere entro un tempo limite, definito da un timer.<br/>
+  <b>Pool corrente</b>: <i><span id="domande">96</span></i> domande differenti (ultima modifica: <i><span id="ultima_modifica">2024-02-02</span></i>).
+
+  [**Download**](https://github.com/FabioC-alt/SNQuiz/releases/latest)
+  ·
+  [Teoria del corso](https://github.com/Lombax99/SpaceNetwork/tree/main/Teoria)
+  ·
+  [Feature Request | Bug Report](https://github.com/FabioC-alt/SNQuiz/issues/new/choose)
+</div>
+
 # SNQuiz
 
 Applicazione mobile di SNQuiz, per esercitarsi con i quiz del corso Space Network M. 
