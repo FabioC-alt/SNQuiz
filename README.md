@@ -3,7 +3,7 @@
 Applicazione mobile di SNQuiz, per esercitarsi con i quiz del corso Space Network M. 
 
 ### Applicazione
-Questa applicazione è stata sviluppata a partire da quella di @mikyll che ringrazio
+Questa applicazione è stata sviluppata a partire da quella di [@mikyll](https://github.com/mikyll) che ringrazio
 profondamente per la pazienza e la disponibilità. 
 
 ### Esecuzione
@@ -14,6 +14,7 @@ profondamente per la pazienza e la disponibilità.
 Quest'app non è da considerarsi sostitutiva allo studio del materiale, bensì di aiuto
 per il superamento dell'esame.
 La teoria è disponibile [qui](https://github.com/Lombax99/SpaceNetwork/tree/main/Teoria).
+A cura di @Lombax99
 
 ### Compilazione APK
 - default: ```flutter build apk --split-per-abi```
