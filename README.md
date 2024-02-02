@@ -14,7 +14,7 @@ profondamente per la pazienza e la disponibilità.
 Quest'app non è da considerarsi sostitutiva allo studio del materiale, bensì di aiuto
 per il superamento dell'esame.
 La teoria è disponibile [qui](https://github.com/Lombax99/SpaceNetwork/tree/main/Teoria).
-A cura di @Lombax99
+A cura di [@Lombax99](https://github.com/Lombax99).
 
 ### Compilazione APK
 - default: ```flutter build apk --split-per-abi```
