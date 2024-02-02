@@ -52,3 +52,25 @@ Per l'implementazione ho utilizzato dell'app mobile ho utilizzato Flutter e come
 
 versione Flutter: 3.16.5 (stable)<br/>
 versione SDK Dart: 3.2.3 (stable)
+
+
+[downloads-shield]: https://img.shields.io/github/downloads/FabioC-alt/SNQuiz/total
+[downloads-url]: https://github.com/FabioC-alt/SNQuiz/releases/latest
+[contributors-shield]: https://img.shields.io/github/contributors/FabioC-alt/SNQuiz
+[domande-shield]: https://img.shields.io/static/v1?label=domande&message=96&color=green
+[domande-url]: https://github.com/mikyll/ROQuiz/blob/main/Domande.txt
+[stars-url]: https://github.com/mikyll/ROQuiz/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mikyll/ROQuiz
+[issues-url]: https://github.com/mikyll/ROQuiz/issues
+[license-shield]: https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg
+[license-url]: https://creativecommons.org/licenses/by-nc-sa/4.0/
+[java-shield]: https://custom-icon-badges.herokuapp.com/badge/Java-ED8B00?logo=java&logoColor=white
+[java-url]: https://www.java.com
+[dart-shield]: https://img.shields.io/badge/Dart-%230175C2.svg?logo=dart&logoColor=white
+[dart-url]: https://dart.dev/
+[flutter-shield]: https://img.shields.io/badge/Flutter-%2302569B.svg?logo=Flutter&logoColor=white
+[flutter-url]: https://flutter.dev/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=0077B5
+[linkedin-url]: https://www.linkedin.com/in/fabio-antonello-ciraci-281479161/?originalSubdomain=it
+[github-shield]: https://img.shields.io/github/followers/mikyll.svg?style=social&label=Follow
+[github-url]: https://github.com/FabioC-alt
