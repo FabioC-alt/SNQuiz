@@ -30,7 +30,7 @@ Questa applicazione è stata sviluppata a partire da quella di [@mikyll](https:/
 profondamente per la pazienza e la disponibilità. 
 
 ### Esecuzione
-1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.5/SNQuiz-mobile.apk).
+1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizAndroid.apk).
 2. Selezionare ```INSTALLA``` e ```INSTALLA COMUNQUE```.
 
 ### Teoria
