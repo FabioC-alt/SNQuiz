@@ -33,6 +33,7 @@ profondamente per la pazienza e la disponibilità.
 1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizAndroid.apk).
 2. Selezionare ```INSTALLA``` e ```INSTALLA COMUNQUE```.
 
+### Esecuzione Windows
 1. Scaricare il file [exe](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizWindows.exe).
 
 ### Teoria
