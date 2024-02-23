@@ -29,9 +29,11 @@ Applicazione mobile di SNQuiz, per esercitarsi con i quiz del corso Space Networ
 Questa applicazione è stata sviluppata a partire da quella di [@mikyll](https://github.com/mikyll) che ringrazio
 profondamente per la pazienza e la disponibilità. 
 
-### Esecuzione
+### Esecuzione Android
 1. Scaricare l'[apk](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizAndroid.apk).
 2. Selezionare ```INSTALLA``` e ```INSTALLA COMUNQUE```.
+
+1. Scaricare il file [exe](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizWindows.exe).
 
 ### Teoria
 Quest'app non è da considerarsi sostitutiva allo studio del materiale, bensì di aiuto
@@ -39,9 +41,9 @@ per il superamento dell'esame.
 La teoria è disponibile [qui](https://github.com/Lombax99/SpaceNetwork/tree/main/Teoria).
 A cura di [@Lombax99](https://github.com/Lombax99).
 
-### Compilazione APK
-- default: ```flutter build apk --split-per-abi```
-- obfuscated: ```flutter build apk --obfuscate --split-debug-info=flutter_application/debug```
+### Compilazione
+- Android: ```flutter build apk ``` 
+- Windows: ```flutter build windows ``` 
 
 ### Built With
 Per l'implementazione ho utilizzato dell'app mobile ho utilizzato Flutter e come IDE Visual Studio Code + estensioni Flutter e Dart.
