@@ -12,7 +12,7 @@
   <h3> Applicazione multipiattaforma per esercitarsi con i quiz del corso <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2023/468023">Space Network M</a>.</h3>
   
   L'app permette di <b>simulare dei quiz d'esame</b>: vengono pescate, in modo casuale, delle domande a risposta multipla a cui l'utente deve rispondere entro un tempo limite, definito da un timer.<br/>
-  <b>Pool corrente</b>: <i><span id="domande">96</span></i> domande differenti (ultima modifica: <i><span id="ultima_modifica">2024-02-02</span></i>).
+  <b>Pool corrente</b>: <i><span id="domande">96</span></i> domande differenti (ultima modifica: <i><span id="ultima_modifica">2024-23-02</span></i>).
 
   [**Download**](https://github.com/FabioC-alt/SNQuiz/releases/latest)
   ·
