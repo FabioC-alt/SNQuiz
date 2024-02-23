@@ -108,7 +108,7 @@ class QuestionRepository {
     DateTime date;
 
     http.Response response = await http.get(Uri.parse(
-        'https://api.github.com/repos/mikyll/SNQuiz/commits?path=Domande.txt&page=1&per_page=1'));
+        'https://api.github.com/repos/FabioC-alt/SNQuiz/commits?path=Domande.txt&page=1&per_page=1'));
 
     try {
       List<dynamic> json = jsonDecode(response.body);
@@ -138,7 +138,7 @@ class QuestionRepository {
 
   Future<String> downloadFile(
       [url =
-          "https://raw.githubusercontent.com/mikyll/SNQuiz/main/Domande.txt"]) async {
+          "https://raw.githubusercontent.com/FabioC-alt/SNQuiz/main/Domande.txt"]) async {
     String result = "";
 
     // Get file content from repo
