@@ -34,7 +34,7 @@ profondamente per la pazienza e la disponibilità.
 2. Selezionare ```INSTALLA``` e ```INSTALLA COMUNQUE```.
 
 ### Esecuzione Windows
-1. Scaricare il file [exe](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizWindows.exe).
+1. Scaricare il file [exe](https://github.com/FabioC-alt/SNQuiz/releases/download/v1.1.1/SNQuizWindows.zip).
 
 ### Teoria
 Quest'app non è da considerarsi sostitutiva allo studio del materiale, bensì di aiuto
